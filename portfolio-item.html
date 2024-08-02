@@ -11,8 +11,30 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
         
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            /* Button styles */
+            .back-to-home {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                padding: 10px 20px;
+                background-color: #007bff; /* Bootstrap primary color */
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 16px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                z-index: 1000;
+            }
+
+            .back-to-home:hover {
+                background-color: #0056b3; /* Darker shade for hover effect */
+            }
+        </style>
     </head>
     <body>
+        <a href="index.html" class="back-to-home">Back to Home</a>
+        
         <header>
             <div class="logo">
                 &lt;SWEGoodluck&gt;
@@ -29,7 +51,7 @@
         </header>
         
         <!-- Chatbot Project -->
-        <section class="intro">
+        <section id="chatbot-project" class="intro">
             <h1 class="section__title section__title--intro">
                 <strong>Chatbot Project</strong>
             </h1>
@@ -44,7 +66,7 @@
         </div>
         
         <!-- Sales Analysis Project -->
-        <section class="intro">
+        <section id="sales-analysis" class="intro">
             <h1 class="section__title section__title--intro">
                 <strong>Sales Analysis Project</strong>
             </h1>
@@ -59,7 +81,7 @@
         </div>
         
         <!-- Game Development Project -->
-        <section class="intro">
+        <section id="game-development" class="intro">
             <h1 class="section__title section__title--intro">
                 <strong>Game Development Project</strong>
             </h1>
@@ -72,11 +94,26 @@
             <img src="img/Game.jpeg" alt="Game Development Project Details">
             <p>The game includes unique character abilities and interactive stages, offering an engaging experience while showcasing a retro music culture theme.</p>
         </div>
+
+        <!-- Pantry Manager Project -->
+        <section id="pantry-manager" class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Pantry Manager Project</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Web Application for Managing Pantry Inventory</p>
+            <img src="img/pantry_manager2.png" alt="Pantry Manager Project" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>Developed a web application to help users manage their pantry inventory efficiently. The application allows users to track their pantry items, set expiration alerts, and generate shopping lists.</p>
+            <img src="img/pantry_manager1.png" alt="Pantry Manager Project Details">
+            <p>The application is designed with user-friendly interfaces and provides features like adding, editing, and deleting pantry items. It is deployed on Vercel and can be accessed <a href="https://gb-pantry-manager.vercel.app/pantry">here</a>.</p>
+        </div>
         
         <!-- Footer -->
         <footer class="footer">
             <!-- replace with your own email address -->
-            <a href="mailto:Goodluck" class="footer__link">badewolegoodluck55@gmail.com</a>
+            <a href="mailto:badewolegoodluck55@gmail.com" class="footer__link">badewolegoodluck55@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://www.linkedin.com/in/goodluck-badewole">
